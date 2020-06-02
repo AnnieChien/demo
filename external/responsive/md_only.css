@@ -1,0 +1,15 @@
+.user-page ul {
+	padding-left: 0px !important;
+}
+
+.private-navbar li {
+	float: left;
+}
+
+.user-private-info {
+	margin-top: 50px;
+}
+
+.user-setting-info {
+	padding-bottom: 50px;
+}

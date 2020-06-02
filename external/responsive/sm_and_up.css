@@ -1,0 +1,29 @@
+.user-avatar, .user-page-info, .device-framed {
+	display: block;
+}
+
+.navbar-right-bordered {
+	margin-left: 0px;
+    float: right;
+}
+
+.navbar-collapse {
+	padding: 0px;
+	height: 54px;
+}
+	
+.user-page ul {
+	padding-left: 0px !important;
+}
+
+.user-setting-menu > ul > li > a {
+	padding: 10px 15px;
+}
+
+.user-setting-page {
+	padding-left: 0px;
+}
+
+.user-setting-info {
+	padding-bottom: 50px;
+}

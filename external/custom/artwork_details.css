@@ -1,0 +1,74 @@
+@media (min-width: 992px) {
+    #artwork-other-section-top {
+        display: none !important;
+    }
+    #artist-other-section-top {
+        display: none;
+    }
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width:991px) {
+    .container {
+        width: 100%;
+    }
+    .col-lg-9-artwork-detail {
+        width: 100% !important;
+    }
+
+    #artwork-other-section {
+        display: none !important;
+    }
+    #artist-other-section {
+        display: none !important;
+    }
+    #artwork_preview_button {
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #artwork_buy_button {
+        max-width: 470px;
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .single-artwork-page .col-lg-7, .single-artwork-page .col-md-7 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #artwork-other-section-top {
+        margin-bottom: 60px !important;
+    }
+    #artist-profile {
+        margin-bottom: 35px;
+    }
+    #artist-other-section-top {
+        margin-bottom: 35px;
+    }
+    .single-artwork-clip {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .row {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .avatar-center {
+        width: 20% !important;
+        min-width: 100px;
+    }
+    #avatar {
+        width: 100% !important;
+    }
+}
+
+.avatar-center {
+    width: 150px;
+    margin: auto;
+}
