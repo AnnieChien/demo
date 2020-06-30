@@ -57,26 +57,130 @@
       margin-bottom: 0;
     }
   }
-
-  // .second-nav {
-  //   margin-top: 0;
-  //   padding-top: 129px;
-  // }
 }
 
 @media (max-width: 767px) {
+  .navbar-brand {
+    line-height: initial;
+  }
   #mobile-header {
     display: block !important;
   }
 
   .second-nav {
     margin-left: 16px;
+    div {
+      flex: 1 0 21%;
+    }
+  }
+
+  .edition-display,
+  .feed-display {
+    &.artwork-gallery {
+      padding-top: 255px !important;
+    }
   }
 }
 
+/// Mobile screen
 @media (max-width: 468px) {
   .sorting {
     display: none;
+  }
+
+  /// Landing slider
+  .landing-slider {
+    .carousel-inner {
+      .item {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .carousel-caption {
+      left: 20px;
+      bottom: 62px;
+    }
+  }
+
+  /// Footer
+  #footer {
+    display: flex;
+
+    // Column left
+    // Column right
+    .input,
+    .button {
+      .screen-l {
+        display: none;
+      }
+
+      .screen-sm {
+        display: inline-block;
+      }
+    }
+
+    #general-content-left {
+      .container-footer {
+        padding-left: 5px;
+      }
+
+      .navbar-nav-footer {
+        display: flex !important;
+        overflow: initial !important;
+
+        li>a {
+          padding: 10px 7px;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    #general-content-column-right {
+      padding-right: 5px;
+
+      input {
+        width: 100%;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        padding: 0 8px;
+        margin-left: 5px;
+
+        img {
+          width: 10px;
+          margin-top: -2px;
+        }
+      }
+
+      img {
+        margin-left: 0;
+      }
+
+      p {
+        display: none;
+      }
+
+      .subscribe {
+        margin-left: 10px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  /// Feed
+  .feed-frame {
+    .user-url {
+      width: 94%;
+
+      .url {
+        width: auto;
+      }
+    }
   }
 }
 
@@ -92,8 +196,8 @@
   }
 
   .second-nav {
-    top: 100px;
     margin-left: 0;
+    top: 150px;
 
     &.fix-top {
       padding-top: 6px;
@@ -140,7 +244,7 @@
         }
 
         .user-purchased-list-info-gallery {
-          padding: 0 0 14.21% 0;
+          padding: 0 0 0 0;
         }
       }
 
@@ -179,11 +283,35 @@
   }
 }
 
+/// Desktop screen
 @media (min-width: 460px) {
-  .edition-frame {
+  #header {
+    left: 30px;
+  }
 
-    // flex-grow: 1;
-    // flex: 1 0 20%;
+  /// Landing
+  .landing-slider {
+    .img-wrapper {
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .carousel-caption {
+      left: 32px;
+      bottom: (32px + 60px);
+      font-size: 22px;
+    }
+  }
+
+  .edition-display,
+  .feed-display {
+    padding-top: 344px !important;
+  }
+
+  .edition-frame {
     .user-purchased-list-gallery {
       .mask-cover {
         padding-left: 24.4% !important;
@@ -194,10 +322,19 @@
     }
   }
 
+  .feed-frame {
+    .user-purchased-list-gallery {
+      .mask-cover {
+        padding: 10% 10% !important;
+      }
+    }
+
+  }
+
   .artwork-gallery>.artwork-installed-list-gallery {
     &.edition-frame {
       width: auto !important;
-      max-width: 25% - $frame-margin;
+      max-width: (100% - ($frame-margin * 3)) / 4;
       margin-right: $frame-margin !important;
       flex: 1 0 22%;
       overflow: initial !important;
@@ -207,12 +344,64 @@
       }
 
       .user-purchased-list-thumbnail {
-        padding-bottom: 115% !important;
+        padding-bottom: 114.5% !important;
         margin: 0 0 14px 0;
       }
 
       .user-purchased-list-info-gallery {
         padding: 0 0 14.21% 0;
+      }
+    }
+
+    &.feed-frame {
+      margin-bottom: 89px !important;
+      .user-purchased-list-thumbnail {
+        margin: 0;
+      }
+      .user-purchased-list-info-gallery {
+        padding: 0;
+      }
+    }
+  }
+
+  /// Footer
+  #footer {
+    .container-footer {
+      padding-left: 40px;
+    }
+
+    .navbar-nav-footer {
+      margin-left: 0;
+    }
+
+    .navbar-nav-footer>li {
+      a {
+        padding: 10px $footer-a-spacing;
+      }
+
+      &:first-child a {
+        padding-left: 0;
+      }
+    }
+
+    #general-content-column-right {
+      padding-right: 50px;
+      padding-top: 17px;
+    }
+
+    .subscribe {
+      margin-right: 34px;
+    }
+
+    .social-media {
+      img {
+        margin-left: 21px;
+      }
+
+      a:first-child {
+        img {
+          margin-left: 0
+        }
       }
     }
   }
@@ -256,6 +445,7 @@
 
   .nav.login {
     float: none;
+    margin-right: 8px;
 
     li {
 

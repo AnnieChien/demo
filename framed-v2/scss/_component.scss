@@ -58,6 +58,12 @@
 
 }
 
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /// Border radius
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -81,7 +87,7 @@
   padding: 3px;
   white-space: nowrap;
   border: solid 1px $light-gray;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 1);
 
   &:after {
     content: "";

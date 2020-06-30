@@ -54,6 +54,8 @@ $gray: #828282;
 $light-gray:#eee;
 $menu-gray: #BDBDBD;
 $black: #000;
+$footer-gray: #E5E5E5;
+$button-gray: #E1E1E1;
 
 /// Reset
 * {
@@ -101,7 +103,7 @@ b {
 
 /// Screen width
 $scree-maxWidth: 1920px;
-$screen-width-calc: calc(100% - 60px);
+$screen-width-calc: calc(100% - 62px); // space left=32px, right=30px
 $mb-screen-width-calc: calc(100% - 20px);
 
 /// Frame size in screen size 1440px
@@ -109,7 +111,8 @@ $frame-width: 332px;
 $frame-height: $frame-width * 1.145;
 $frame-item-w: 170px;
 $frame-item-h: 302px;
-$frame-margin: 1.6%;
+$frame-feed-item-w: 332px - (32px * 2);
+$frame-margin: 1.2%;
 /// Frame size in screen size 1920px
 $frame-width-xl: 442px;
 $frame-height-xl: $frame-width * 1.145;
@@ -121,3 +124,9 @@ $mb-frame-width: 194px;
 $mb-frame-height: 222px;
 $mb-frame-item-w: 99px;
 $mb-frame-item-h: 176px;
+
+/// Header
+$stick-t-r-max-width: 432px + 20px;
+
+/// Footer
+$footer-a-spacing: 37px/2;
