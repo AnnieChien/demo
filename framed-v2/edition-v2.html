@@ -404,16 +404,14 @@
       side: 'right',
       source: '#navigation',
       onOpen: function() {
-        // $("#overlay").height(docHeight).css({
-        //   'opacity': 0.4,
-        //   'position': 'absolute',
-        //   'top': 0,
-        //   'left': 0,
-        //   'background-color': 'black',
-        //   'width': '100%',
-        //   'z-index': 1000,
-        //   'cursor': 'pointer'
-        // });
+        $("#mobile-header.menu-expand-button").css({
+          'position': "fixed",
+          'top': 25,
+          'right': 18,
+          'width': '30px',
+          'height': '45px',
+          'z-index': 999999,
+        });
         $('#navigation-open').addClass("close_icon");
       },
       onClose: function() {

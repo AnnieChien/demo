@@ -386,7 +386,7 @@ header {
       width: 30px;
       height: 30px;
       display: inline-block;
-      border: solid 1px yellow;
+      border: solid 1px red;
     }
   }
 }
@@ -424,7 +424,6 @@ header {
 
 .sidr-open {
   #mobile-header.menu-expand-button {
-    background: url("images/icon-hamburger.svg") no-repeat;
     position: fixed;
     top: 25px;
     right: 18px;
