@@ -434,6 +434,21 @@ header {
   background: url("images/icon-hamburger.svg") no-repeat;
 }
 
+.sidr-open #mobile-header.menu-expand-button {
+  position: fixed;
+  top: 32px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px yellow;
+  transition: transform 0.3s;
+  transform-origin: center center;
+  transform: rotate(90deg);
+}
+.sidr-open #mobile-header.menu-expand-button .close_icon span {
+  transform: scale(1);
+}
+
 #sidr-main.sidr {
   width: 400px;
   background: white;
