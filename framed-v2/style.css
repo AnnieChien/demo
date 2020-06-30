@@ -424,7 +424,7 @@ header {
   width: 30px;
   height: 30px;
   display: inline-block;
-  border: solid 1px #000;
+  border: solid 1px red;
 }
 
 .Home-page .nav-icon-line span {
@@ -432,6 +432,17 @@ header {
 }
 .Home-page.sidr-open .nav-icon-line span {
   background: url("images/icon-hamburger.svg") no-repeat;
+}
+
+#mobile-header.menu-expand-button {
+  position: fixed;
+  top: 25px;
+  right: 18px;
+  width: 30px;
+  height: 45px;
+  border: solid 0px yellow;
+  transition: transform 0.3s;
+  transform-origin: center center;
 }
 
 .sidr-open #mobile-header.menu-expand-button {

@@ -386,7 +386,7 @@ header {
       width: 30px;
       height: 30px;
       display: inline-block;
-      border: solid 1px #000;
+      border: solid 1px red;
     }
   }
 }
@@ -409,18 +409,17 @@ header {
 
 /// Mobile menu
 #mobile-header.menu-expand-button {
-  // position: fixed;
-  // top: 32px;
-  // right: 30px;
-  // // z-index: 9999999;
-  // width: 30px;
-  // height: 30px;
-  // // float: none;
-  // // text-align: center;
-  // // padding-right: 5px;
-  // border: solid 1px yellow;
-  // transition: transform 0.3s;
-  // transform-origin: center center;
+  position: fixed;
+    top: 25px;
+    right: 18px;
+    width: 30px;
+    height: 45px;
+    // float: none;
+    // text-align: center;
+    // padding-right: 5px;
+    border: solid 0px yellow;
+    transition: transform 0.3s;
+    transform-origin: center center;
 }
 
 .sidr-open {
