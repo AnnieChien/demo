@@ -424,7 +424,7 @@ header {
   width: 30px;
   height: 30px;
   display: inline-block;
-  border: solid 0px #000;
+  border: solid 1px #000;
 }
 
 .Home-page .nav-icon-line span {
@@ -436,11 +436,11 @@ header {
 
 .sidr-open #mobile-header.menu-expand-button {
   position: fixed;
-  top: 32px;
-  right: 30px;
+  top: 25px;
+  right: 18px;
   width: 30px;
-  height: 30px;
-  border: solid 1px yellow;
+  height: 45px;
+  border: solid 0px yellow;
   transition: transform 0.3s;
   transform-origin: center center;
   transform: rotate(90deg);
