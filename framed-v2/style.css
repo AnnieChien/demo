@@ -437,18 +437,7 @@ header {
 }
 
 #mobile-header.menu-expand-button {
-  position: fixed;
-  top: 32px;
-  right: 30px;
-  z-index: 9999999;
-  width: 30px;
-  height: 30px;
-  float: none;
-  text-align: center;
-  padding-right: 5px;
-  border: solid 1px red;
-  transition: transform 0.3s;
-  transform-origin: center center;
+  border: solid 1px yellow;
 }
 
 .page-edition,
