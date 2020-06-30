@@ -451,13 +451,6 @@ header {
   transform-origin: center center;
 }
 
-.sidr-open #mobile-header.menu-expand-button {
-  transform: rotate(90deg);
-}
-.sidr-open .sidr-class-separate {
-  display: none;
-}
-
 .page-edition,
 .page-feed {
   margin: 95px 30px 0 30px;
