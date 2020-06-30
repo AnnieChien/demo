@@ -427,6 +427,70 @@ header {
   background: url("images/icon-hamburger.svg") no-repeat;
 }
 
+#sidr-main.sidr {
+  width: 400px;
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 25px;
+  z-index: 1;
+}
+#sidr-main.sidr ul li {
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+#sidr-main.sidr ul li .sidr-class-submenu li {
+  margin-bottom: 0px;
+}
+#sidr-main.sidr ul li a, #sidr-main.sidr ul li span {
+  color: #828282;
+  text-transform: initial;
+  display: inline-block;
+  padding-left: 0;
+  line-height: 24px;
+}
+#sidr-main.sidr ul li a.sidr-class-active, #sidr-main.sidr ul li span.sidr-class-active {
+  color: black;
+}
+#sidr-main.sidr ul li a.sidr-class-m-level-1 {
+  color: black;
+}
+#sidr-main.sidr ul li a.sidr-class-m-level-1:before {
+  content: "→";
+  padding-right: 6px;
+}
+#sidr-main.sidr ul li > a:hover, #sidr-main.sidr ul li > span:hover, #sidr-main.sidr ul li.active > a, #sidr-main.sidr ul li.active > span, #sidr-main.sidr ul li.sidr-class-active > a, #sidr-main.sidr ul li.sidr-class-active > span {
+  background: transparent;
+}
+#sidr-main .sidr-class-first-item-class {
+  height: inherit !important;
+  line-height: 24px !important;
+}
+#sidr-main .sidr-class-submenu,
+#sidr-main .sidr-class-language {
+  padding-left: 26px;
+}
+#sidr-main .sidr-class-language {
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+#sidr-main .sidr-class-contact {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 30px 0 25px;
+  margin-top: 2em;
+}
+#sidr-main .sidr-class-contact .sidr-class-fb {
+  padding-left: 20px;
+}
+#sidr-main .sidr-class-email span {
+  display: block;
+}
+
 .page-edition,
 .page-feed {
   margin: 95px 30px 0 30px;
