@@ -458,10 +458,6 @@ header {
   display: none;
 }
 
-#sidr-main.sidr {
-  width: 400px;
-}
-
 .page-edition,
 .page-feed {
   margin: 95px 30px 0 30px;
