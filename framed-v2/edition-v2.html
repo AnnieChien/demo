@@ -412,11 +412,15 @@
           'height': '45px',
           'z-index': 999999,
         });
+        $("#sidr-main.sidr").css({
+          'z-index':1
+        });
         $('#navigation-open').addClass("close_icon");
       },
       onClose: function() {
         $('#navigation-open').removeClass("close_icon");
         $('#mobile-header.menu-expand-button').removeAttr('style');
+        $('#sidr-main.sidr').removeAttr('style');
       },
     });
     // Video hovering play
