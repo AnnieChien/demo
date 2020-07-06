@@ -84,6 +84,10 @@
 
 /// Mobile screen
 @media (max-width: 468px) {
+  #wrapper.screen-wrapper #header {
+    width: calc(100% - 20px);
+  }
+
   .sorting {
     display: none;
   }
@@ -209,7 +213,8 @@
   }
 
   #mobile-header.menu-expand-button {
-    right: 10px;
+    margin-right: -10px;
+    padding-right: 0;
   }
 
   .fix-top {
