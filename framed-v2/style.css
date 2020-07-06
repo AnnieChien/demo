@@ -422,7 +422,7 @@ header {
   display: none;
 }
 .navbar-text-dark .nav-icon-line span {
-  background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+  background: url("../themes/default/images/icon-hamburger.svg") no-repeat;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -430,10 +430,10 @@ header {
 }
 
 .Home-page .nav-icon-line span {
-  background: url("/themes/default/images/icon-hamburger-white.svg") no-repeat;
+  background: url("../themes/default/images/icon-hamburger-white.svg") no-repeat;
 }
 .Home-page.sidr-open .nav-icon-line span {
-  background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+  background: url("../themes/default/images/icon-hamburger.svg") no-repeat;
 }
 
 .sidr-open #mobile-header.menu-expand-button {

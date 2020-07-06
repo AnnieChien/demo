@@ -382,7 +382,7 @@ header {
 
   .nav-icon-line {
     span {
-      background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+      background: url("../themes/default/images/icon-hamburger.svg") no-repeat;
       width: 30px;
       height: 30px;
       display: inline-block;
@@ -394,14 +394,14 @@ header {
 .Home-page {
   .nav-icon-line {
     span {
-      background: url("/themes/default/images/icon-hamburger-white.svg") no-repeat;
+      background: url("../themes/default/images/icon-hamburger-white.svg") no-repeat;
     }
   }
 
   &.sidr-open {
     .nav-icon-line {
       span {
-        background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+        background: url("../themes/default/images/icon-hamburger.svg") no-repeat;
       }
     }
   }
