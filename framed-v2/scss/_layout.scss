@@ -66,7 +66,9 @@ html {
   }
 }
 
-.mb-gradient-cover {display: none;}
+.mb-gradient-cover {
+  display: none;
+}
 
 #general-content-column-right {
   .widget_container {
@@ -106,6 +108,7 @@ html {
     font-weight: 500;
     padding: 1px 14px 2px 13px;
     margin-left: 15px;
+
     &.screen-l {
       width: 93px;
       height: 30px;
@@ -147,7 +150,7 @@ header {
   font-size: $font-size-large;
   line-height: $line-height-large;
 
-  span {
+  .navbar-brand-img span {
     display: block;
     font-size: $font-size-large;
   }
@@ -388,39 +391,53 @@ header {
 }
 
 /// Mobile menu icon
-.navbar-text-dark {
+.mobile-menu-btn {
+  background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 2;
+  top: 30px;
+  right: 30px;
+  transition: transform 0.3s;
 
-  .nav-icon-line:after,
-  .nav-icon-line:before {
-    background-color: #000;
-    display: none;
-  }
-
-  .nav-icon-line {
-    span {
-      background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      border: solid 0px #000;
-    }
+  &.open {
+    transition: transform 0.3s;
+    transform-origin: center center;
+    transform: rotate(90deg);
   }
 }
 
-.Home-page {
-  .nav-icon-line {
-    span {
-      background: url("/themes/default/images/icon-hamburger-white.svg") no-repeat;
-    }
+.navbar-text-dark {
+  .mobile-menu-btn {
+    display: none;
   }
 
-  &.sidr-open {
-    .nav-icon-line {
-      span {
-        background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
-      }
-    }
+  // .nav-icon-line:after,
+  // .nav-icon-line:before {
+  //   background-color: #000;
+  //   display: none;
+  // }
+
+  // .nav-icon-line {
+  //   span {
+  //     background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+  //     width: 30px;
+  //     height: 30px;
+  //     display: inline-block;
+  //     border: solid 0px #000;
+  //   }
+  // }
+}
+
+.Home-page {
+  .mobile-menu-btn {
+    background: url("/themes/default/images/icon-hamburger-white.svg") no-repeat;
   }
+
+  .mobile-menu-btn.open {
+      background: url("/themes/default/images/icon-hamburger.svg") no-repeat;
+    }
 }
 
 /// Mobile menu
@@ -440,114 +457,27 @@ header {
 }
 
 .sidr-open {
-  #mobile-header.menu-expand-button {
-    position: fixed;
-    top: 25px;
-    right: 18px;
-    width: 30px;
-    height: 45px;
-    // float: none;
-    // text-align: center;
-    // padding-right: 5px;
-    border: solid 0px red;
-    transition: transform 0.3s;
-    transform-origin: center center;
-    transform: rotate(90deg);
-
-    .close_icon span,
-    .navbar-text-dark .close_icon span {
-      transform: scale(1);
-    }
-  }
+  // #mobile-header.menu-expand-button {
+  //   position: fixed;
+  //   top: 25px;
+  //   right: 18px;
+  //   width: 30px;
+  //   height: 45px;
+  //   // float: none;
+  //   // text-align: center;
+  //   // padding-right: 5px;
+  //   border: solid 0px red;
+  //   transition: transform 0.3s;
+  //   transform-origin: center center;
+  //   transform: rotate(90deg);
+  //   .close_icon span,
+  //   .navbar-text-dark .close_icon span {
+  //     transform: scale(1);
+  //   }
+  // }
 }
 
-#sidr-main {
-  &.sidr {
-    // display: none;
-    width: 100%;
-    background: white;
-    font-family: $main-font-face;
-    text-transform: capitalize;
-    font-size: 20px;
-    line-height: $line-height-large;
-    padding-left: 25px;
-    z-index: 1;
-  }
 
-  &.sidr ul li {
-    line-height: $line-height-large;
-    margin-bottom: 26px;
-
-    .sidr-class-submenu li {
-      margin-bottom: 0px;
-    }
-  }
-
-  &.sidr ul li a,
-  &.sidr ul li span {
-    color: $gray;
-    text-transform: initial;
-    display: inline-block;
-    padding-left: 0;
-    line-height: $line-height-large;
-
-    &.sidr-class-active {
-      color: black;
-    }
-  }
-
-  &.sidr ul li a.sidr-class-m-level-1 {
-    color: black;
-
-    &:before {
-      content: "→";
-      padding-right: 6px;
-    }
-  }
-
-  &.sidr ul li>a:hover,
-  &.sidr ul li>span:hover,
-  &.sidr ul li.active>a,
-  &.sidr ul li.active>span,
-  &.sidr ul li.sidr-class-active>a,
-  &.sidr ul li.sidr-class-active>span {
-    background: transparent;
-  }
-
-  .sidr-class-first-item-class {
-    height: inherit !important;
-    line-height: $line-height-large !important;
-  }
-
-  .sidr-class-submenu,
-  .sidr-class-language {
-    padding-left: 26px;
-  }
-
-  .sidr-class-language {
-    margin-top: 30px;
-    margin-bottom: 34px;
-  }
-
-  .sidr-class-contact {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 30px 0 25px;
-    margin-top: 2em;
-
-    .sidr-class-fb {
-      padding-left: 20px;
-    }
-  }
-
-  .sidr-class-email {
-    span {
-      display: block;
-    }
-  }
-}
 
 /// Pages
 .page-edition,
@@ -730,6 +660,7 @@ header {
   }
 
   .carousel-caption {
+    z-index: 1;
     text-shadow: 0 0 0;
     text-align: left;
     padding-bottom: 0;
@@ -758,4 +689,78 @@ header {
     background-image: none;
     width: 50%;
   }
+}
+
+/// Products
+#products {
+  padding: 0;
+}
+.row-box {
+  img {
+    width: 100%;
+  }
+}
+.pd-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  background: black;
+  img {
+    width: 100%;
+  }
+}
+
+.grids {
+  position: relative;
+  border: solid 0px #000;
+  height: 100%;
+  max-height: 1321px;
+
+  .grid-caption {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: white;
+    span {
+      color: $menu-gray-aa;
+      padding-left: 5px;
+    }
+  }
+
+  .grid-text {
+    color: white;
+    font-size: 34px;
+    line-height: 1.5;
+    max-width: 779px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+/// Product slider
+.grid-2 {
+  max-width: 970px;
+  position: relative;
+  margin: auto;  
+}
+#pdCarousel {
+  &.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .carousel-inner {
+    .item {
+      height: 100vh;
+    }
+
+    .active {}
+  }
+
 }
