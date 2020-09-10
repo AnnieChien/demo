@@ -1,0 +1,58 @@
+///
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+///
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+///
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+///
+.default-bgWithTxt {
+  background: $color-dark-brown;
+  color: white;
+}
+
+.hover-bg-gray {
+  background: $color-light;
+  color: black;
+}
+
+.txt-light {
+  color: white;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.a-style-brown {
+  @extend .no-underline;
+  color: $color-dark-text;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+///
+.transition-bg {
+  -webkit-transition: background-color 80ms ease-in-out;
+  -moz-transition: background-color 80ms ease-in-out;
+  -o-transition: background-color 80ms ease-in-out;
+  -ms-transition: background-color 80ms ease-in-out;
+  transition: background-color 80ms ease-in-out;
+}

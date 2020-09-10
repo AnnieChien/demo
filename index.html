@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <title>東港共興堂 Gong Xing Tang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https:cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js"></script>
+  <script>
+  // Toggle the menu
+  $(document).ready(function() {
+    $(".mb-icon").click(function() {
+      $("html").toggleClass("disable-scroll");
+      $("#navigation").toggleClass("open-menu");
+      $(this).toggleClass("open");
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <div class="slogn">
+        <img src="images/slogn.png" alt="共仰神興">
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="東港共興堂">
+      </div>
+      <div class="fb">
+        <div class="views">累積瀏覽：135461</div>
+        <div class="share">
+          <span><img src="images/fb-1.png" alt="facebook"></span><span><img src="images/fb-2.png" alt="facebook"></span>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <!-- <div class="top">
+      <div class="top-bar">
+        <a href="index.html" class="top-bar-item">首頁</a>
+        <a href="content.html" class="top-bar-item hide-small">作品列表</a>
+        <a href="#contact" class="top-bar-item hide-small">聯絡方式</a>
+        <a class="mb-navi" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      </div>
+    </div> -->
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <!-- <div id="navDemo" class="mb-navi-block">
+      <a href="content.html" class="mb-navi-item" onclick="myFunction()">作品列表</a>
+      <a href="#contact" class="mb-navi-item" onclick="myFunction()">聯絡方式</a>
+    </div> -->
+    <main>
+      <div class="home-image">
+        <div class="main-img">
+          <img src="images/1.jpg" alt="東港共興堂,邢府四千歲">
+        </div>
+        <div class="main-caption">
+          <h3><a href="">東港共興堂</a></h3>
+          <ul>
+            <li>＊ 主神：邢府四千歲</li>
+            <li>＊ 駕前：南關將軍</li>
+            <li>＊ 堂主：林啟文 (雕刻師傅)</li>
+            <li>＊ 附設：神像雕刻、開光、整修</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-content">
+          <div class='marquee' data-direction='up' data-duration='2000' data-pauseOnHover="true" delay="2000">
+            <p><a href="content.html">【 最新神像雕刻作品 】　邢府千歲  本堂榮幸承雕-特此感謝！</a></p>
+            <p><a href="content.html">2【 最新神像雕刻作品 】　邢府千歲  本堂榮幸承雕-特此感謝！</a></p>
+            <p><a href="content.html">3【 最新神像雕刻作品 】　邢府千歲  本堂榮幸承雕-特此感謝！</a></p>
+            <p><a href="content.html">4【 最新神像雕刻作品 】　邢府千歲  本堂榮幸承雕-特此感謝！</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="">
+      <p>神像雕刻作業時間：09:00~17:30　　電話：08-8351145</p>
+      <p>工作地址：屏東縣東港鎮東隆里東隆街8-3號 (東港東隆宮廣場旁)</p>
+      <p>東港共興堂 版權所有 © Copyright 2015 by All Rights Reserved. 君如工作室設計</p>
+    </footer>
+  </div>
+</body>
+
+</html>

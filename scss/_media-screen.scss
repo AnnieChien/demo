@@ -1,0 +1,158 @@
+@media (max-width:1205px) and (min-width: 800px) {
+  .main-img {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: auto !important;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width:799px) {
+  .home-image {
+    flex-direction: column;
+    max-height: none !important;
+
+    .main-img {
+      width: 100%;
+      min-height: 200px;
+    }
+
+    .main-caption {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 959px) and (min-width: 601px) {
+  .list-wrapper {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:600px) {
+  .hide-small {
+    display: none !important;
+  }
+
+  header {
+    flex-direction: column;
+
+    .slogn,
+    .fb,
+    .logo {
+      text-align: center;
+      width: 100%;
+    }
+
+    .slogn img {
+      max-width: 300px;
+      min-width: 300px;
+    }
+  }
+
+  .fb {
+    padding-bottom: 8px;
+  }
+
+  .banner {
+    height: 268px;
+  }
+
+  .banner-slogn {
+    display: none;
+  }
+
+  /// Mb menu
+  #navigation {
+    display: none;
+
+    &.open-menu {
+      display: block;
+    }
+
+  }
+
+/// 
+  .mb-icon {
+    &.open {
+      .fa-times {
+        display: block; /// [x]
+        margin-top: 5px;
+      }
+      .fa-bars {
+        display: none;
+      }
+    }
+    .fa-times {
+      display: none; /// [x]
+    }    
+  }
+
+  .banner .top {
+    top: 0;
+  }
+
+  .top-bar {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .top-bar ul.cols3 {
+    position: initial;
+    padding-left: 14px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .top-bar li .col1 li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /// List items
+  .list-wrapper {
+    justify-content: center;
+  }
+
+  .map {
+    grid-template-columns: auto;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width:992px) {}
+
+@media (max-width:992px) and (min-width:601px) {
+  .hide-medium {
+    display: none !important;
+  }
+
+  .banner-slogn {
+    right: 0;
+    width: 40%;
+  }
+}
+
+@media (min-width:601px) {
+  .mb-icon {
+    display: none;
+  }
+
+  /// Top menu
+  .top {
+    bottom: 0;
+  }
+}
+
+@media (min-width:993px) {
+  .hide-large {
+    display: none !important;
+  }
+}
+
+// .w3-hide-large{display:none!important};

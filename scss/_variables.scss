@@ -1,0 +1,42 @@
+/// Fonts
+$main-font: 'Noto Sans TC', sans-serif;
+
+/// Colors
+$black             : black;
+$color-dark-brown  : #b99d77;
+$color-dark-text   : #4a2d06;
+$color-light-brown : #b99d77;
+$bg-light-brown    : #fffef5;
+$color-light       : lighten($black,75%);
+$color-menu-head   : $color-dark-text;
+$color-light-yellow: #FEFCF1;
+$color-a           :#2e2e2e;
+$color-a-contrast  :#d34541;
+$color-hover       : $color-a-contrast;
+$color-blue: #0076C0;
+
+//media screen size
+//
+@mixin respond-to($media) {
+  @if $media==mobile {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if $media==mobile-xs {
+    @media only screen and (max-width: 414px) {
+      @content;
+    }
+  }
+  @else if $media==tablets {
+    @media only screen and (max-width: 1155px) {
+      @content;
+    }
+  }
+  @else if $media==ipad{ // 1600 - 120 - 60
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+}
+
