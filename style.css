@@ -371,6 +371,9 @@ a:hover {
   border-right: solid 1px #b99d77;
   margin-right: 20px;
 }
+.contact ul li span:nth-child(2) {
+  border: 0;
+}
 .contact ul li a {
   padding-right: 5px;
 }
